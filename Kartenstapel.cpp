@@ -17,9 +17,12 @@ Kartenstapel::Kartenstapel(void) {
 }
 
 Karte Kartenstapel::takeCard(void) {
+	Karte k = karten.top();
+	karten.pop();
+	return k;
 }
 
-std::vector<Karte> makeVector(){
+std::vector<Karte> Kartenstapel::makeVector() {
 	std::vector<Karte> cards;
 	while (!karten.empty()) {
 		cards.push_back(karten.top());
