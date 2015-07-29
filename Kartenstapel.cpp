@@ -53,6 +53,10 @@ void mischen() {
 		cards[y] = temp;
 	}
 
+	for (int i = 0; i < cards.size(); i++) {
+		cards[i].toString;
+	}
+
 	makeStack(cards);	
 	// speicher freigeben irgendwie..
 
