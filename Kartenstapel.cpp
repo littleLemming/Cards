@@ -13,9 +13,8 @@ Kartenstapel::Kartenstapel(void) {
 			//k.toString();
 			karten.push(k);
 		}
-		mischen();
 	}
-
+	mischen();
 }
 
 Karte Kartenstapel::takeCard(void) {
@@ -29,7 +28,7 @@ std::vector<Karte> Kartenstapel::makeVector() {
 	while (karten.empty() == false) {
 		Karte k = karten.top();
 		cards.push_back(k);
-		k.toString();
+		//k.toString();
 		karten.pop();
 	}
 	return cards;
@@ -37,6 +36,7 @@ std::vector<Karte> Kartenstapel::makeVector() {
 
 void Kartenstapel::makeStack(std::vector<Karte> kartenH){
 	for (auto i : kartenH) {
+		//i.toString();
 		karten.push(i);
 	}
 }
@@ -44,11 +44,11 @@ void Kartenstapel::makeStack(std::vector<Karte> kartenH){
 void Kartenstapel::mischen() {
 
 	std::vector<Karte> cards = makeVector();
-
+/*
 	for (int i = 0; i < cards.size(); i++) {
 		cards[i].toString();
 	}
-
+*/
 	int x = 0;
 	int y = 0;
 	Karte temp;
@@ -68,8 +68,7 @@ void Kartenstapel::mischen() {
 		cards[i].toString();
 	}
 */
-	makeStack(cards);	
-	// speicher freigeben irgendwie..
+	makeStack(cards);
 
 }
 

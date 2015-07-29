@@ -17,4 +17,7 @@ int main() {
 	//karte = new Karte(5, 5);
 	//karte->toString();
 	kartenstapel = new Kartenstapel();
+	kartenstapel->takeCard().toString();
+	kartenstapel->takeCard().toString();
+	kartenstapel->takeCard().toString();
 }
