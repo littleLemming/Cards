@@ -54,7 +54,7 @@ void mischen() {
 	}
 
 	for (int i = 0; i < cards.size(); i++) {
-		cards[i].toString;
+		cards[i].toString();
 	}
 
 	makeStack(cards);	
