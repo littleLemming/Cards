@@ -9,7 +9,7 @@ class Kartenstapel {
 private:
 	std::stack<Karte> karten;
 	std::vector<Karte> makeVector(void);
-	void makeStack(std::vector<Karte> kartenH);
+	void makeStack(std::vector<Karte>);
 public:
 	Kartenstapel();
 	~Kartenstapel();

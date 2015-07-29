@@ -53,8 +53,7 @@ void mischen() {
 		cards[y] = temp;
 	}
 
-	makeStack();
-	temp~;
+	makeStack(cards);	
 	// speicher freigeben irgendwie..
 
 }
