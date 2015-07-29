@@ -26,9 +26,11 @@ Karte Kartenstapel::takeCard(void) {
 
 std::vector<Karte> Kartenstapel::makeVector() {
 	std::vector<Karte> cards;
-	while (!karten.empty()) {
+	int size = karten.size();
+	cards.resize(size);
+	for (int i = 0; i < size; i++) {
 		Karte k = karten.top();
-		cards.push_back(k);
+		cards[i] = k;
 		karten.pop();
 	}
 	return cards;
@@ -36,7 +38,7 @@ std::vector<Karte> Kartenstapel::makeVector() {
 
 void Kartenstapel::makeStack(std::vector<Karte> kartenH){
 	for (auto i : kartenH) {
-		karten.push(kartenH[i]);
+		karten.push(i);
 	}
 }
 
