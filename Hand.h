@@ -12,7 +12,7 @@ public:
 	~Hand();
 	void addCard(Karte);
 	Karte dropACard(void);
-	bool dropCard(Karte);
+	Karte dropCard(Karte);
 	bool dropCard(int,int);
 	bool hasCard(Karte);
 	bool isValidHand(void);

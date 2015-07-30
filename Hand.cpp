@@ -27,8 +27,20 @@ Karte Hand::dropACard(void) {
     return k;
 }
 	
-bool Hand::dropCard(Karte) {
-
+bool Hand::dropCard(Karte k) {
+	if (hasCard(k)) {
+		Karte x = k;
+		int z = -1;
+		for (int i = 0; i < karten.size(); i++) {
+			if (karten[i].equals(k)) {
+				z = i;
+				break;
+			}
+		}
+		karten.erase[z];
+		return x;
+	}
+	return NULL;
 }
 
 bool dropCard(int color,int number) {
@@ -52,7 +64,9 @@ bool Hand::canAddCard(void) {
 }
 
 void Hand::toString(void) {
-
+	for (int i = 0; i < karten.size(); i++) {
+		karten[i].toString;
+	}
 }
 
 bool Hand::searchCard(int color, int num) {
