@@ -7,7 +7,9 @@ class Ablagestapel
 public:
 	Ablagestapel();
 	~Ablagestapel();
+	void toString(void);
 private:
 	std::stack<Karte> abgelegteKarten;
+	bool addCard(Karte karte);
 };
 
