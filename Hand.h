@@ -1,9 +1,12 @@
+#ifndef KARTE_H
+#define KARTE_H
+
 #include <vector>
 #include "Karte.h"
 
 class Hand {
 private:
-	std::list<Karte> karten;
+	std::vector<Karte> karten;
 	int maxSize;
 	int minSize;
 public:
@@ -21,3 +24,5 @@ public:
 	bool canAddCard(void);
 	void toString(void);
 };
+
+#endif
