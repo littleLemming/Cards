@@ -3,8 +3,6 @@
 
 #include "Karte.h"
 
-using namespace std;
-
 class Kartenstapel {
 private:
 	std::stack<Karte> karten;

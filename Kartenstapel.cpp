@@ -1,5 +1,4 @@
 #include "Kartenstapel.h"
-#include <cstdlib>
 
 const int SIZE = 52;
 
