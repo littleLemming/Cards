@@ -1,5 +1,9 @@
 #include "Hand.h"
 
+Hand::Hand() {
+
+}
+
 Hand::Hand(int max,int min,std::list<Karte> hand) {
 	if(hand.size() <= max && hand.size() >= min) {
 		maxSize = max;
@@ -20,6 +24,10 @@ bool Hand::dropCard(Karte) {
 
 }
 
+bool dropCard(int color,int number) {
+	
+}
+
 bool Hand::hasCard(Karte) {
 
 }
@@ -36,16 +44,12 @@ bool Hand::canAddCard(void) {
 
 }
 
-bool Hand::canAddCard(void) {
-
-}
-
 void Hand::toString(void) {
 
 }
 
 bool Hand::searchCard(int color, int num) {
-	
+
 }
 
 Hand::~Hand() {
