@@ -8,6 +8,6 @@ public:
 	Ablagestapel();
 	~Ablagestapel();
 private:
-	std::stack<Karte> karten;
+	std::stack<Karte> abgelegteKarten;
 };
 

@@ -1,6 +1,5 @@
 #include "Karte.h" 
 
-
 Karte::Karte(void) {}
 
 Karte::Karte(int newNum = 0, int newColor = 0){
