@@ -9,6 +9,14 @@ private:
 public:
 	Hand(int,int,std::list<Karte>);
 	~Hand();
-	void addCards(Karte);
-	void addCard(Karte);
+	bool addCard(Karte);
+	Karte dropACard(void);
+	bool dropCard(Karte);
+	bool hasCard(Karte);
+	bool isValidHand(void);
+	bool canDropCard(void);
+	bool canAddCard(void);
+	bool canAddCard(void);
+	void toString(void);
+	bool searchCard(int,int);
 };
