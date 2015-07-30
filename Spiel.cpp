@@ -1,14 +1,19 @@
 #include "Spiel.h"
 
 int MAX_PLAYERS;
+int MIN_CARDS;
+int MAX_CARDS;
 
 Spiel::Spiel()
 {
 }
 
-Spiel::Spiel(int maxSpieler)
+Spiel::Spiel(int maxSpieler,int minHandkarten,int maxHandkarten)
 {
 	MAX_PLAYERS = maxSpieler;
+	MIN_CARDS = minHandkarten;
+	MAX_PLAYERS = maxHandkarten;
+
 }
 
 bool Spiel::addPlayer(Spieler spieler){

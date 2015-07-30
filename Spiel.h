@@ -8,7 +8,7 @@ class Spiel
 {
 public:
 	Spiel();
-	Spiel(int);
+	Spiel(int,int,int);
 	~Spiel();
 	bool addPlayer(Spieler);
 private:
@@ -16,5 +16,6 @@ private:
 	Ablagestapel ablage;
 
 	std::vector<Spieler> spielers;
+
 };
 
