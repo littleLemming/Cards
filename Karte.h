@@ -11,7 +11,7 @@ public:
 	Karte(int, int);
 	~Karte();
 	bool equals(Karte);
-	void toString();
+	std::string toString();
 	int getNum();
 	int getColor();
 private:

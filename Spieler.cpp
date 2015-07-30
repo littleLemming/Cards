@@ -11,9 +11,13 @@ Spieler::Spieler(std::string spielerName)
 
 }
 
-bool Spieler::dealCards(int minHandkarten,int maxHandkarten,std::vector<Karte> &karten){
+void Spieler::dealCards(int minHandkarten,int maxHandkarten,std::vector<Karte> &karten){
 	hand = new Hand(minHandkarten, maxHandkarten, karten);
 
+}
+
+std::string Spieler::toString(){
+	return "Spieler " + name + hand->toString();
 }
 
 Spieler::~Spieler()

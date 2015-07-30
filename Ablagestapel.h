@@ -1,3 +1,6 @@
+#ifndef ABLAGESTAPEL_H
+#define ABLAGESTAPEL_H
+
 #include <stack>
 
 #include "Karte.h"
@@ -13,3 +16,4 @@ private:
 	bool addCard(Karte karte);
 };
 
+#endif

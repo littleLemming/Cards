@@ -14,6 +14,7 @@ public:
 	Spieler(std::string);
 	~Spieler();
 
-	bool dealCards(int,int,std::vector<Karte>&);
+	void dealCards(int,int,std::vector<Karte>&);
+	std::string toString();
 };
 

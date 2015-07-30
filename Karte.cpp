@@ -1,5 +1,7 @@
 #include "Karte.h" 
 
+#include <sstream>
+
 Karte::Karte(void) {}
 
 Karte::Karte(int newNum = 0, int newColor = 0){
@@ -9,8 +11,11 @@ Karte::Karte(int newNum = 0, int newColor = 0){
 
 Karte::~Karte(void) {}
 
-void Karte::toString(){
-	std::cout << "num: " << num << " color: " << color << std::endl;
+std::string Karte::toString(){
+
+	std::ostringstream oss;
+	oss << "num: " << num << " color: " << color << std::endl;
+	return oss.str();
 }
 
 int Karte::getNum() {

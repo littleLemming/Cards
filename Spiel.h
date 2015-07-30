@@ -1,3 +1,6 @@
+#ifndef SPIEL_H
+#define SPIEL_H
+
 #include <vector>
 
 #include "Kartenstapel.h"
@@ -19,3 +22,4 @@ private:
 
 };
 
+#endif
