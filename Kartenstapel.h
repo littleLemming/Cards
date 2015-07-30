@@ -2,6 +2,7 @@
 #include <stack>
 
 #include "Karte.h"
+#include "Ablagestapel.h"
 
 using namespace std;
 
@@ -15,7 +16,7 @@ public:
 	~Kartenstapel();
 	void toString(void);
 	Karte takeCard(void);
-	void putCardOnStack(Karte);
+	Kartenstapel::mergeWithAblagestapel(Ablagestapel)
 	void mischen(void);
 };
 

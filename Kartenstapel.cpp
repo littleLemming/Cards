@@ -79,7 +79,13 @@ void Kartenstapel::mischen() {
 
 }
 
+/*
 void Kartenstapel::putCardOnStack(Karte) {
+
+}
+*/
+
+void Kartenstapel::mergeWithAblagestapel(Ablagestapel a)
 
 }
 

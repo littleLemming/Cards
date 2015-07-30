@@ -1,7 +1,6 @@
 #include <list>
 
-class Hand
-{
+class Hand {
 public:
 	Hand();
 	~Hand();
