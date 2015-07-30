@@ -9,6 +9,7 @@ g++ -std=c++11 -Wall -O3 -pedantic-errors filename.cpp -o applicationname
 #include "Karte.h"
 #include "Kartenstapel.h"
 
+void handleInput();
 
 //Karte* karte;
 Kartenstapel* kartenstapel;
@@ -24,9 +25,16 @@ int main() {
 
 	while (!game_over){
 
-		if (GetAsyncKeyState(VK_ESCAPE))
-		{
-			game_over = true;
-		}
+		handleInput();
+
 	}
+}
+
+void handleInput(){
+
+	if (GetAsyncKeyState(VK_ESCAPE))
+	{
+		game_over = true;
+	}
+
 }
