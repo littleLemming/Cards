@@ -44,33 +44,65 @@ bool Hand::dropCard(Karte k) {
 }
 
 bool dropCard(int color,int number) {
-
+	if (hasCard(color,number)) {
+		Karte x = k;
+		int z = -1;
+		for (int i = 0; i < karten.size(); i++) {
+			if (karten[i].getNum() == number && karten[i].getColor() == color) {
+				z = i;
+				break;
+			}
+		}
+		karten.erase[z];
+		return x;
+	}
+	return NULL;
 }
 
-bool Hand::hasCard(Karte) {
+bool Hand::hasCard(Karte k) {
+	for (int i = 0; i < karten.size(); i++) {
+		if (karten[i].equals(k)) {
+			return true;
+		}
+	}
+	return false;
+}
 
+bool Hand::hasCard(int color, int num) {
+	for (int i = 0; i < karten.size(); i++) {
+		if (karten[i].getNum() == num && karten[i].getColor() == color) {
+			return true;
+		}
+	}
+	return false;
 }
 
 bool Hand::isValidHand(void) {
+	if (karten.size() >= minSize && karten.size() <= maxSize) {
+		return true;
+	}
+	return false;
 
 }
 
 bool Hand::canDropCard(void) {
-
+	if (karten.size() > minSize) {
+		return true;
+	}
+	return false;
 }
 
 bool Hand::canAddCard(void) {
-
+	if (karten.size() < maxSize) {
+		return true;
+	}
+	return false;
 }
 
 void Hand::toString(void) {
 	for (int i = 0; i < karten.size(); i++) {
 		karten[i].toString;
 	}
-}
-
-bool Hand::searchCard(int color, int num) {
-
 }
 
 Hand::~Hand() {

@@ -15,9 +15,9 @@ public:
 	Karte dropCard(Karte);
 	bool dropCard(int,int);
 	bool hasCard(Karte);
+	bool hasCard(int,int);
 	bool isValidHand(void);
 	bool canDropCard(void);
 	bool canAddCard(void);
 	void toString(void);
-	bool searchCard(int,int);
 };
