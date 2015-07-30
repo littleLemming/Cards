@@ -4,8 +4,6 @@
 
 const int SIZE = 52;
 
-//std::stack<Karte> karten;
-
 Kartenstapel::Kartenstapel(void) {
 
 	for (int i = 1; i <= 4; i++) { // colors
@@ -85,7 +83,7 @@ void Kartenstapel::putCardOnStack(Karte) {
 }
 */
 
-void Kartenstapel::mergeWithAblagestapel(Ablagestapel a)
+void Kartenstapel::mergeWithAblagestapel(Ablagestapel a) {
 
 }
 
