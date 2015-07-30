@@ -76,6 +76,10 @@ void Kartenstapel::mischen() {
 
 }
 
+void Kartenstapel::mergeWithAblagestapel(Ablagestapel a) {
+
+}
+
 Kartenstapel::~Kartenstapel() {
 
 }

@@ -1,9 +1,12 @@
 #include <list>
 
-class Hand
-{
+class Hand {
+private:
+	std::list<Karte> karten;
+	int maxSize;
+	int minSize;
 public:
-	Hand();
+	Hand(int,int);
+	Hand(int,int,std::list<Karte>);
 	~Hand();
 };
-
