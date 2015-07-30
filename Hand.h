@@ -6,7 +6,8 @@ private:
 	int maxSize;
 	int minSize;
 public:
-	Hand(int,int);
 	Hand(int,int,std::list<Karte>);
 	~Hand();
+	void addCards(Karte);
+	void addCard(Karte);
 };
