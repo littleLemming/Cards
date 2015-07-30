@@ -4,8 +4,6 @@
 #include "Karte.h"
 #include "Ablagestapel.h"
 
-using namespace std;
-
 class Kartenstapel {
 private:
 	std::stack<Karte> karten;
@@ -16,7 +14,7 @@ public:
 	~Kartenstapel();
 	void toString(void);
 	Karte takeCard(void);
-	Kartenstapel::mergeWithAblagestapel(Ablagestapel)
+	void mergeWithAblagestapel(Ablagestapel);
 	void mischen(void);
 };
 

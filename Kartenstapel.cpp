@@ -1,5 +1,4 @@
 #include "Kartenstapel.h"
-#include <cstdlib>
 #include <random>
 
 const int SIZE = 52;
@@ -76,12 +75,6 @@ void Kartenstapel::mischen() {
 	makeStack(cards);
 
 }
-
-/*
-void Kartenstapel::putCardOnStack(Karte) {
-
-}
-*/
 
 void Kartenstapel::mergeWithAblagestapel(Ablagestapel a) {
 

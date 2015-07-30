@@ -10,4 +10,3 @@ public:
 	Hand(int,int,std::list<Karte>);
 	~Hand();
 };
-
