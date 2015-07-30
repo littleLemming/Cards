@@ -7,3 +7,11 @@ public:
 	~Hand();
 };
 
+#include <list>
+
+class Hand {
+public:
+	Hand();
+	~Hand();
+};
+
