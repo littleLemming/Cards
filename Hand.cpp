@@ -8,5 +8,7 @@ Hand::Hand(int max,int min,std::list<Karte> hand) {
 	}
 }
 
+
+
 Hand::~Hand() {
 }

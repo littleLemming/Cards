@@ -1,4 +1,5 @@
 #include <list>
+#include "Karte.h"
 
 class Hand {
 private:
