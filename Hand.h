@@ -1,5 +1,5 @@
-#ifndef KARTE_H
-#define KARTE_H
+#ifndef HAND_H
+#define HAND_H
 
 #include <vector>
 #include "Karte.h"
