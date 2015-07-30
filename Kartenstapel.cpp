@@ -1,5 +1,6 @@
 #include "Kartenstapel.h"
 #include <cstdlib>
+#include <random>
 
 const int SIZE = 52;
 
@@ -53,11 +54,17 @@ void Kartenstapel::mischen() {
 	int y = 0;
 	Karte temp;
 
-	for (int i = 0; i < 1000; i++) {
-		x = (rand() % SIZE) + 1;
-		y = (rand() % SIZE) + 1;
+	random_device rd;
+    mt19937 gen(rd());
+    uniform_int_distribution<> dist(0,SIZE-1);
+
+	for (int i = 0; i < 10; i++) {
+		x = dist(gen);
+		std::cout << "x: " << x << std::endl;
+		y = dist(gen);
+		std::cout << "y: " << y << std::endl;
 		while (x == y) {
-			y = (rand() % SIZE) + 1;
+			y = dist(gen);
 		}
 		temp = cards[x];
 		cards[x] = cards[y];
