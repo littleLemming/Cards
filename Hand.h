@@ -1,4 +1,4 @@
-#include <list>
+#include <vector>
 #include "Karte.h"
 
 class Hand {
@@ -8,9 +8,9 @@ private:
 	int minSize;
 public:
 	Hand();
-	Hand(int,int,std::list<Karte>);
+	Hand(int,int,std::vector<Karte>);
 	~Hand();
-	bool addCard(Karte);
+	void addCard(Karte);
 	Karte dropACard(void);
 	bool dropCard(Karte);
 	bool dropCard(int,int);
