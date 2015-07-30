@@ -23,8 +23,6 @@ int main() {
 	kartenstapel->takeCard().toString();
 
 	while (!game_over){
-		std:cout << "abs" << std::endl;
-
 
 		if (GetAsyncKeyState(VK_ESCAPE))
 		{

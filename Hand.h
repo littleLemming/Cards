@@ -1,5 +1,7 @@
 #include <list>
 
+#include "Karte.h"
+
 class Hand {
 private:
 	std::list<Karte> karten;
