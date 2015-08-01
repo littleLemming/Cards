@@ -48,3 +48,16 @@ Release/Spieler.obj
 Release/cl.command.1.tlog
 Release/main.obj
 Release/vc110.pdb
+Debug/Cards.Build.CppClean.log
+Debug/Cards.log
+Debug/Cards.unsuccessfulbuild
+Release/Cards.exe
+Release/Cards.pdb
+Release/Hand.obj
+Release/link-cvtres.read.1.tlog
+Release/link-cvtres.write.1.tlog
+Release/link-rc.read.1.tlog
+Release/link-rc.write.1.tlog
+Release/link.command.1.tlog
+Release/link.read.1.tlog
+Release/link.write.1.tlog

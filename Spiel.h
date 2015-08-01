@@ -13,12 +13,12 @@ public:
 	Spiel();
 	Spiel(int,int,int);
 	~Spiel();
-	bool addPlayer(Spieler);
+	bool addPlayer(Spieler*);
 private:
 	Kartenstapel stapel;
 	Ablagestapel ablage;
 
-	std::vector<Spieler> spielers;
+	std::vector<Spieler*> spielers;
 
 };
 
