@@ -4,7 +4,7 @@ g++ -std=c++11 -Wall -O3 -pedantic-errors filename.cpp -o applicationname
 */
 
 #include <iostream>
-#include <windows.h>
+//#include <windows.h> wiktor du shit.
 
 #include "Karte.h"
 #include "Kartenstapel.h"
