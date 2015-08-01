@@ -55,11 +55,11 @@ void Kartenstapel::mischen() {
     mt19937 gen(rd());
     uniform_int_distribution<> dist(0,SIZE-1);
 
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < 500; i++) {
 		x = dist(gen);
-		std::cout << "x: " << x << std::endl;
+		//std::cout << "x: " << x << std::endl;
 		y = dist(gen);
-		std::cout << "y: " << y << std::endl;
+		//std::cout << "y: " << y << std::endl;
 		while (x == y) {
 			y = dist(gen);
 		}
