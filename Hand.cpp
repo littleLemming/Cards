@@ -23,11 +23,11 @@ Karte Hand::dropACard(void) {
     uniform_int_distribution<> dist(0,karten.size()-1);
     int i = dist(gen);
     Karte k = karten[i];
-    karten.erase(i);
+    karten.erase(karten.begin()+i);
     return k;
 }
 	
-bool Hand::dropCard(Karte k) {
+Karte Hand::dropCard(Karte k) {
 	if (hasCard(k)) {
 		Karte x = k;
 		int z = -1;
@@ -37,13 +37,14 @@ bool Hand::dropCard(Karte k) {
 				break;
 			}
 		}
-		karten.erase[z];
+		karten.erase(karten.begin()+z);
 		return x;
 	}
 	return NULL;
 }
 
-bool dropCard(int color,int number) {
+bool Hand::dropCard(int color,int number) {
+	Karte k = findCard(color,number);
 	if (hasCard(color,number)) {
 		Karte x = k;
 		int z = -1;
@@ -53,10 +54,10 @@ bool dropCard(int color,int number) {
 				break;
 			}
 		}
-		karten.erase[z];
-		return x;
+		karten.erase(karten.begin()+z);
+		return true;
 	}
-	return NULL;
+	return false;
 }
 
 bool Hand::hasCard(Karte k) {
@@ -75,6 +76,15 @@ bool Hand::hasCard(int color, int num) {
 		}
 	}
 	return false;
+}
+
+Karte Hand::findCard(int color,int num) {
+	for (int i = 0; i < karten.size(); i++) {
+		if (karten[i].getNum() == num && karten[i].getColor() == color) {
+			return karten[i];
+		}
+	}
+	return NULL;
 }
 
 bool Hand::isValidHand(void) {
