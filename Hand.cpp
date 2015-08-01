@@ -40,7 +40,7 @@ Karte Hand::dropCard(Karte k) {
 		karten.erase(karten.begin()+z);
 		return x;
 	}
-	return NULL;
+	throw "noSuchCard";
 }
 
 bool Hand::dropCard(int color,int number) {
@@ -84,7 +84,7 @@ Karte Hand::findCard(int color,int num) {
 			return karten[i];
 		}
 	}
-	return NULL;
+	throw "noSuchCard";
 }
 
 bool Hand::isValidHand(void) {
@@ -111,8 +111,8 @@ bool Hand::canAddCard(void) {
 
 std::string Hand::toString(void) {
 	for (int i = 0; i < karten.size(); i++) {
-		Karte* temp = karten[i];
-		temp->toString;
+		Karte temp = karten[i];
+		temp.toString();
 	}
 }
 
