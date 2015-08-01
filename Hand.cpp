@@ -21,8 +21,8 @@ Karte Hand::dropACard(void) {
 	random_device rd;
     mt19937 gen(rd());
     uniform_int_distribution<> dist(0,karten.size()-1);
-    i = dist(gen);
-    k = karten[i];
+    int i = dist(gen);
+    Karte k = karten[i];
     karten.erase(i);
     return k;
 }

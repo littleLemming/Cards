@@ -31,3 +31,6 @@ Release/Cards.tlog/link.command.1.tlog
 Release/Cards.tlog/link.read.1.tlog
 Release/Cards.tlog/link.write.1.tlog
 Release/Cards.tlog/unsuccessfulbuild
+CMakeLists.txt
+a.out
+.idea/*
