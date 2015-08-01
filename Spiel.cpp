@@ -16,7 +16,7 @@ Spiel::Spiel(int maxSpieler,int minHandkarten,int maxHandkarten)
 
 }
 
-bool Spiel::addPlayer(Spieler spieler){
+bool Spiel::addPlayer(Spieler* spieler){
 	if (spielers.size() < MAX_PLAYERS){
 		spielers.push_back(spieler);
 		return true;
