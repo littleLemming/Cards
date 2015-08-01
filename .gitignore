@@ -34,3 +34,17 @@ Release/Cards.tlog/unsuccessfulbuild
 CMakeLists.txt
 a.out
 .idea/*
+Cards.v11.suo
+Release/Ablagestapel.obj
+Release/CL.read.1.tlog
+Release/CL.write.1.tlog
+Release/Cards.lastbuildstate
+Release/Cards.log
+Release/Cards.unsuccessfulbuild
+Release/Karte.obj
+Release/Kartenstapel.obj
+Release/Spiel.obj
+Release/Spieler.obj
+Release/cl.command.1.tlog
+Release/main.obj
+Release/vc110.pdb

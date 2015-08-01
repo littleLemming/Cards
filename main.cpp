@@ -13,7 +13,7 @@ void handleInput();
 
 //Karte* karte;
 Kartenstapel* kartenstapel;
-bool game_over = false;
+bool game_over = true;
 
 int main() {
 	//karte = new Karte(5, 5);
@@ -31,10 +31,5 @@ int main() {
 }
 
 void handleInput(){
-
-	if (GetAsyncKeyState(VK_ESCAPE))
-	{
-		game_over = true;
-	}
 
 }

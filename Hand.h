@@ -23,7 +23,7 @@ public:
 	bool isValidHand(void);
 	bool canDropCard(void);
 	bool canAddCard(void);
-	void toString(void);
+	std::string toString(void);
 };
 
 #endif
