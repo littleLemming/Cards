@@ -110,10 +110,12 @@ bool Hand::canAddCard(void) {
 }
 
 std::string Hand::toString(void) {
+	std:string ret;
 	for (int i = 0; i < karten.size(); i++) {
 		Karte temp = karten[i];
-		temp.toString();
+		ret += temp.toString();
 	}
+	return ret;
 }
 
 Hand::~Hand() {
