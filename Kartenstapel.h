@@ -1,3 +1,6 @@
+#ifndef KARTENSTAPEL_H
+#define KARTENSTAPEL_H
+
 #include <vector>
 #include <stack>
 
@@ -18,3 +21,4 @@ public:
 	void mischen(void);
 };
 
+#endif
