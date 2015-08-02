@@ -1,19 +1,11 @@
 #ifndef ABLAGESTAPEL_H
 #define ABLAGESTAPEL_H
 
-#include <stack>
+#include "Stapel.h"
 
-#include "Karte.h"
-
-class Ablagestapel
-{
+class Ablagestapel : public Stapel {
 public:
-	Ablagestapel();
-	~Ablagestapel();
-	void toString(void);
-private:
-	std::stack<Karte> abgelegteKarten;
-	bool addCard(Karte karte);
+	Karte takeCard();
 };
 
 #endif

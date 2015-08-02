@@ -9,10 +9,9 @@
 #include <list>
 
 #include "Karte.h"
-//#include "Ablagestapel.h"
 
 class Stapel {
-private:
+protected:
     std::list<Karte> karten;
     std::vector<Karte> makeVector(void);
     void makeList(std::vector<Karte>);
@@ -21,6 +20,7 @@ public:
     ~Stapel();
     std::string toString(void);
     Karte takeCard(void);
+    void putCardOnStack(Karte);
     void mischen(void);
 };
 

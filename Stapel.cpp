@@ -82,3 +82,7 @@ std::string Stapel::toString(void) {
     }
     return oss.str();
 }
+
+void Stapel::putCardOnStack(Karte k) {
+    karten.push_front(k);
+}
