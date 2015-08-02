@@ -33,9 +33,9 @@ std::vector<Karte> Kartenstapel::makeVector() {
 }
 
 void Kartenstapel::makeStack(std::vector<Karte> kartenH){
-	for (auto i : kartenH) {
+	for (int i = 0; i < kartenH.size(); i++) {
 		//i.toString();
-		karten.push(i);
+		karten.push(kartenH[i]);
 	}
 }
 
