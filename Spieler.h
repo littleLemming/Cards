@@ -1,3 +1,6 @@
+#ifndef SPIELER_H
+#define SPIELER_H
+
 #include <string>
 #include <vector>
 
@@ -18,3 +21,4 @@ public:
 	std::string toString();
 };
 
+#endif

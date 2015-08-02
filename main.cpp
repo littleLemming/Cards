@@ -24,13 +24,13 @@ int main() {
 	//karte = new Karte(5, 5);
 	//karte->toString();
 	kartenstapel = new Kartenstapel();
-	//kartenstapel->takeCard().toString();
-	//kartenstapel->takeCard().toString();
-	//kartenstapel->takeCard().toString();
+	kartenstapel->takeCard().toString();
+	kartenstapel->takeCard().toString();
+	kartenstapel->takeCard().toString();
 
-	spiel = new Spiel(2,5,5);
-	spieler1 = new Spieler("Max");
-	spiel->addPlayer(spieler1);
+	//spiel = new Spiel(2,5,5);
+	//spieler1 = new Spieler("Max");
+	//spiel->addPlayer(spieler1);
 
 	
 	//spieler1->dealCards(5,5,);  hier kartenvector ald 3 argument übergeben
