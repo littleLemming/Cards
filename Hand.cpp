@@ -27,7 +27,7 @@ Karte Hand::dropACard(void) {
     return k;
 }
 	
-Karte Hand::dropCard(Karte k) {
+bool Hand::dropCard(Karte k) {
 	if (hasCard(k)) {
 		Karte x = k;
 		int z = -1;
@@ -38,12 +38,12 @@ Karte Hand::dropCard(Karte k) {
 			}
 		}
 		karten.erase(karten.begin()+z);
-		return x;
+		return true;
 	}
-	throw "noSuchCard";
+	return false;
 }
 
-bool Hand::dropCard(int color,int number) {
+Karte Hand::dropCard(int color,int number) {
 	Karte k = findCard(color,number);
 	if (hasCard(color,number)) {
 		Karte x = k;
@@ -55,9 +55,9 @@ bool Hand::dropCard(int color,int number) {
 			}
 		}
 		karten.erase(karten.begin()+z);
-		return true;
+		return k;
 	}
-	return false;
+	throw "noSuchCard";
 }
 
 bool Hand::hasCard(Karte k) {

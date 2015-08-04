@@ -19,6 +19,7 @@ public:
 
 	void dealCards(int,int,std::vector<Karte>&);
 	std::string toString();
+	void dropHand();
 };
 
 #endif

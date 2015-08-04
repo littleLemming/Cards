@@ -15,8 +15,8 @@ public:
 	~Hand();
 	void addCard(Karte);
 	Karte dropACard(void);
-	Karte dropCard(Karte);
-	bool dropCard(int,int);
+	bool dropCard(Karte);
+	Karte dropCard(int,int);
 	bool hasCard(Karte);
 	bool hasCard(int,int);
 	Karte findCard(int,int);
